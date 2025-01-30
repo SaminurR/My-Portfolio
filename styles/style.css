@@ -132,7 +132,7 @@ main section {
 /* skills styles */
 .skills-container {
   display: flex;
-  gap: 25px;
+  gap: 24px;
 }
 
 .skill {
@@ -192,10 +192,21 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
-  .skills-container{
+  .skills-container, 
+  .resume-container, 
+  footer, 
+  .about-items {
     flex-direction: column;
   }
-  .resume-container{
-    flex-direction: column;
+  footer, .about {
+    padding: 20px;
   }
+ .footer-column{
+  width: 100%; 
+ }
+ footer input[type="text"],
+ footer input[type="email"],
+ textarea {
+  width: calc(100% - 40px);
+ }
 }

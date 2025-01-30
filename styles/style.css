@@ -155,8 +155,11 @@ main section {
 .experience-description .experience-sub-title {
   color: #252525;
 }
+.resume hr{
+  margin: 30px 5px;
+}
 
-.resume-download-cv {
+.resume-download-cv{
   margin-top: 50px;
 }
 
@@ -182,4 +185,17 @@ textarea {
   padding: 10px 20px;
   margin-bottom: 25px;
   border: none;
+}
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container{
+    flex-direction: column;
+  }
+  .resume-container{
+    flex-direction: column;
+  }
 }

@@ -14,6 +14,7 @@
 .text-primary {
   color: #fd6e0a;
 }
+
 .dark-2 {
   color: rgb(36, 36, 36);
 }
@@ -33,10 +34,12 @@
   font-weight: bold;
   color: black;
 }
+
 .section-description {
   font-size: 18px;
   color: #252525;
 }
+
 .text-center {
   text-align: center;
 }
@@ -48,6 +51,7 @@
   background-repeat: no-repeat;
   background-position: top left, bottom right;
 }
+
 /* Nav styles */
 nav {
   display: flex;
@@ -70,6 +74,7 @@ nav ul li {
   list-style: none;
   margin: 50px;
 }
+
 nav li a {
   text-decoration: none;
   font-size: 20px;
@@ -85,6 +90,7 @@ nav li a {
 .banner-content {
   max-width: 580px;
 }
+
 .banner-grettings {
   font-size: 45px;
   font-weight: 600;
@@ -120,6 +126,7 @@ main section {
   padding: 130px 150px;
   text-align: center;
 }
+
 .about-items {
   display: flex;
   justify-content: space-around;
@@ -146,6 +153,7 @@ main section {
   display: flex;
   gap: 25px;
 }
+
 .experience-sub-title {
   font-size: 20px;
   font-weight: 600;
@@ -155,11 +163,12 @@ main section {
 .experience-description .experience-sub-title {
   color: #252525;
 }
-.resume hr{
+
+.resume hr {
   margin: 30px 5px;
 }
 
-.resume-download-cv{
+.resume-download-cv {
   margin-top: 50px;
 }
 
@@ -187,26 +196,59 @@ textarea {
   border: none;
 }
 
-.hide{
-  display: none;
-}
-
+/* responsive media query  */
 @media screen and (max-width: 576px) {
-  .skills-container, 
-  .resume-container, 
-  footer, 
-  .about-items {
+
+  .skills-container,
+  .resume-container,
+  footer,
+  .about-items,
+  .banner,
+  nav,
+  nav>ul {
     flex-direction: column;
   }
-  footer, .about {
+
+  nav>ul {
+    gap: 10px;
+  }
+
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+
+  .banner {
+    margin: 20px;
+  }
+
+  .banner-picture {
+    width: 100%;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  footer,
+  .about {
     padding: 20px;
   }
- .footer-column{
-  width: 100%; 
- }
- footer input[type="text"],
- footer input[type="email"],
- textarea {
-  width: calc(100% - 40px);
- }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  footer input[type="text"],
+  footer input[type="email"],
+  textarea {
+    width: calc(100% - 40px);
+  }
+}
+
+/* Tablet specific media query */
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+  .banner {
+    flex-direction: column;
+  }
 }
